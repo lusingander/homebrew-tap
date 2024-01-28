@@ -8,6 +8,10 @@ class Stu < Formula
       url "https://github.com/lusingander/stu/releases/download/v0.2.5/stu-0.2.5-darwin-arm64.tar.gz"
       sha256 "3163297e883bbef1c5550f380d004e35c472620241723fcb62c3d5473f29609a"
     end
+    if Hardware::CPU.intel?
+      url "https://github.com/lusingander/stu/releases/download/v0.2.5/stu-0.2.5-darwin-amd64.tar.gz"
+      sha256 "9055d38d01d41851ff10368e7e9af575bcdcda969c4105c56b523acbcb4942b3"
+    end
   end
 
   def install

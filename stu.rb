@@ -1,16 +1,16 @@
 class Stu < Formula
   desc "TUI application for AWS S3 written in Rust using ratatui"
   homepage "https://github.com/lusingander/stu"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lusingander/stu/releases/download/v0.5.0/stu-0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "b550a85aa1dd1f7d51d1e72d1fcd882cc52bea6e30c62e8d61bec1f5d817a201"
+      url "https://github.com/lusingander/stu/releases/download/v0.5.1/stu-0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "ae32f3d8446e3662e90252889043be92f815c8f8b08a02e57f4c50ecbf78d688"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lusingander/stu/releases/download/v0.5.0/stu-0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "9e2b35194ac0d8839f549d4baa92bf383da9c3046bab095beb1725f4623deb06"
+      url "https://github.com/lusingander/stu/releases/download/v0.5.1/stu-0.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "d7cece5e4d96cc75c020aa77cbe7e68a2bba0514c3081acea6ad514d58ba5ab2"
     end
   end
 

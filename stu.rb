@@ -13,6 +13,13 @@ class Stu < Formula
       sha256 "c337151425c357c65d26c19458c6a4daca6e516c8b162d020e82da3c133dde10"
     end
   end
+  
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/lusingander/stu/releases/download/v0.6.2/stu-0.6.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8679a530811df18f51a9e32c8ebef71e6a0b063130220bf969bf4f1b953a9ec2"
+    end
+  end
 
   def install
     bin.install "stu"

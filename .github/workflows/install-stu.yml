@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - '*'
+    paths:
+      - stu.rb
+      - .github/workflows/install-stu.yml
 
 jobs:
   install:

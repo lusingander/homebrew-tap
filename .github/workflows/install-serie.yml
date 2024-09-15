@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - '*'
+    paths:
+      - serie.rb
+      - .github/workflows/install-serie.yml
 
 jobs:
   install:

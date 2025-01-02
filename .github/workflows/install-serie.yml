@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         targets:
-          - macos-12 # x86_64
+          - macos-13 # x86_64
           - macos-14 # aarch64
     runs-on: ${{ matrix.targets }}
     steps:

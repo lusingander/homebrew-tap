@@ -1,0 +1,23 @@
+name: Install ddv
+
+on:
+  push:
+    branches:
+      - '*'
+    paths:
+      - ddv.rb
+      - .github/workflows/install-ddv.yml
+
+jobs:
+  install:
+    strategy:
+      matrix:
+        targets:
+          - macos-13 # x86_64
+          - macos-14 # aarch64
+    runs-on: ${{ matrix.targets }}
+    steps:
+      - name: Run brew install
+        run: brew install lusingander/tap/ddv
+      - name: Test
+        run: ddv --version

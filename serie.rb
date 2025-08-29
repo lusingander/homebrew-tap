@@ -1,16 +1,16 @@
 class Serie < Formula
   desc "A rich git commit graph in your terminal, like magic"
   homepage "https://github.com/lusingander/serie"
-  version "0.4.7"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lusingander/serie/releases/download/v0.4.7/serie-0.4.7-aarch64-apple-darwin.tar.gz"
-      sha256 "98a5181676954f7aa6c460f3e53882ba063a38b5c1bf7c7e403a1f7afea51518"
+      url "https://github.com/lusingander/serie/releases/download/v0.5.0/serie-0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "eb40ad8b2b7af55d0bbfb2a8c4987aab47e5d0b8a25779cce94ba14b9e870d27"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lusingander/serie/releases/download/v0.4.7/serie-0.4.7-x86_64-apple-darwin.tar.gz"
-      sha256 "8f2367cb14bf6221400fa2f9f347b291b71c5c4bf5d56a26c5ea4c1cdd2dd4b4"
+      url "https://github.com/lusingander/serie/releases/download/v0.5.0/serie-0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "030b44f472a311fa406be90f1e181297779287a6a9603567eca087030915140b"
     end
   end
 

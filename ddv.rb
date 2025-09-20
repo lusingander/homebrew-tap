@@ -1,16 +1,16 @@
 class Ddv < Formula
   desc "Terminal DynamoDB Viewer"
   homepage "https://github.com/lusingander/ddv"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lusingander/ddv/releases/download/v0.1.0/ddv-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ac40150c1918fee65d8d8301f1a98d9935b52dfd878700684e76a49d4613fa6e"
+      url "https://github.com/lusingander/ddv/releases/download/v0.2.0/ddv-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "27e8764bc4dbecd6999ee6ad9bb5a0feab4a42274a4e94fd033f836c6940dcfb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lusingander/ddv/releases/download/v0.1.0/ddv-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "afc5e9cc5eb43844bf0e23b16d5cede6ffa6dff14ebc23f1e6ec19e4d2789a7a"
+      url "https://github.com/lusingander/ddv/releases/download/v0.2.0/ddv-0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "f0bde62ade10c6021922d9fdfb2ec81b6733abb8a2c14eaab4ee8b48b41bf57c"
     end
   end
 

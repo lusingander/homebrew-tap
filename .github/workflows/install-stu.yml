@@ -14,8 +14,8 @@ jobs:
       matrix:
         targets:
           - ubuntu-24.04 # x86_64
-          - macos-13 # x86_64
-          - macos-14 # aarch64
+          - macos-15-intel # x86_64
+          - macos-15 # aarch64
     runs-on: ${{ matrix.targets }}
     steps:
       # https://github.com/actions/runner-images/issues/6283

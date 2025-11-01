@@ -1,23 +1,23 @@
 class Stu < Formula
   desc "TUI application for AWS S3 written in Rust using ratatui"
   homepage "https://github.com/lusingander/stu"
-  version "0.7.4"
+  version "0.7.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lusingander/stu/releases/download/v0.7.4/stu-0.7.4-aarch64-apple-darwin.tar.gz"
-      sha256 "23a97b99fc086f100030e6348739bc70efdf073d0105539d200d095d3f0469dd"
+      url "https://github.com/lusingander/stu/releases/download/v0.7.5/stu-0.7.5-aarch64-apple-darwin.tar.gz"
+      sha256 "832a0b4cc82ad5e2c6746b53fa6d7a1726f2ba91cb270162892036212347c50a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lusingander/stu/releases/download/v0.7.4/stu-0.7.4-x86_64-apple-darwin.tar.gz"
-      sha256 "caa70e138cbbb24d270c6b1aeaf286246a46ae138e5c120cafd2d7bc8270899d"
+      url "https://github.com/lusingander/stu/releases/download/v0.7.5/stu-0.7.5-x86_64-apple-darwin.tar.gz"
+      sha256 "ee4a03444100bd95cf9ffc09a2a091807da1680d9d71b06012ab0eeef128e5c2"
     end
   end
   
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lusingander/stu/releases/download/v0.7.4/stu-0.7.4-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1bb92469c4036643429ce81f034570391522f8b6408b688a3f9f9e34987d148d"
+      url "https://github.com/lusingander/stu/releases/download/v0.7.5/stu-0.7.5-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "64543d88f92c122eba37e2b15a95d9ccebe9336e4b40dc0d5cc0b829389f9dce"
     end
   end
 

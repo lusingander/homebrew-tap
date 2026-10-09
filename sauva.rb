@@ -1,16 +1,16 @@
 class Sauva < Formula
   desc "Terminal Unicode Explorer"
   homepage "https://github.com/lusingander/sauva"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lusingander/sauva/releases/download/v0.4.0/sauva-0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9356ed2f73fb56302b859a6b590db4e3fc188f85f908fc44cccd7f6f1115bcb7"
+      url "https://github.com/lusingander/sauva/releases/download/v0.5.0/sauva-0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "251b3fdf3efcc9e9a9be75930e82c92b494dbfcbaf02c1277ae256505b8e5d58"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lusingander/sauva/releases/download/v0.4.0/sauva-0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "d1da450d7fc67bd1e0297b5750dbc6e8db09b828d53173043f32d4be6eff9bcc"
+      url "https://github.com/lusingander/sauva/releases/download/v0.5.0/sauva-0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "bb509630829f8a3161d21a6365b1dbfd773034db647f9c1fde4a51d0cb9d8df5"
     end
   end
 

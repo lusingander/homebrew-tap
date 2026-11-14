@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Setup homebrew
         if: runner.os == 'Linux'
-        uses: Homebrew/actions/setup-homebrew@master
+        uses: Homebrew/actions/setup-homebrew@2026.11.09.1
       - name: Run brew install
         run: brew install lusingander/tap/ddv
       - name: Test

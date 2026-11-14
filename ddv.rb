@@ -14,6 +14,13 @@ class Ddv < Formula
     end
   end
 
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/lusingander/ddv/releases/download/v0.3.1/ddv-0.3.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "9f89d5d37c4223a5337eee493030b43113021694381c003f626a8b6ae7ed384e"
+    end
+  end
+
   def install
     bin.install "ddv"
   end

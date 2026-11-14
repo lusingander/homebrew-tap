@@ -14,6 +14,13 @@ class Serie < Formula
     end
   end
 
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/lusingander/serie/releases/download/v0.10.2/serie-0.10.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "502132d861b4fc6b5cc3ca50b1d003dff4e48b80b1718f04515cbfafd0f4e0fa"
+    end
+  end
+
   def install
     bin.install "serie"
   end

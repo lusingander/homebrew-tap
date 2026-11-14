@@ -14,6 +14,13 @@ class Sauva < Formula
     end
   end
 
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/lusingander/sauva/releases/download/v0.7.0/sauva-0.7.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "6141dc8dad6983dbfcdfd6cb5a468d7659e0f3de1692afe79e1501ce41f7b8c4"
+    end
+  end
+
   def install
     bin.install "sauva"
   end

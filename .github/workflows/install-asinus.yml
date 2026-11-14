@@ -1,0 +1,23 @@
+name: Install asinus
+
+on:
+  push:
+    branches:
+      - '*'
+    paths:
+      - asinus.rb
+      - .github/workflows/install-asinus.yml
+
+jobs:
+  install:
+    strategy:
+      matrix:
+        targets:
+          - macos-26-intel # x86_64
+          - macos-26 # aarch64
+    runs-on: ${{ matrix.targets }}
+    steps:
+      - name: Run brew install
+        run: brew install lusingander/tap/asinus
+      - name: Test
+        run: asinus --version
